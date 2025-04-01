@@ -38,7 +38,7 @@
 
         <div class="content">
 
-            <div class="home-container page" id="home-page">  <!-- Home page -->
+            <div class="home-container page" id="home-page">          <!-- Home page -->
                 <div class="home-content " id="home-content">
                     <div class="text-content">
                         <h2>I'm a <span class="theme-text" id="profession-text"></span><span class="cursor">|</span></h2>
@@ -60,7 +60,7 @@
             </div>
             
             
-            <div class="about-container page" id="about-page">  <!-- About page -->
+            <div class="about-container page" id="about-page">        <!-- About page -->
                 <div class="about-contenter ">
                     <h2 class="about-heading">About Me</h2>
                     <div class="about-content">
@@ -261,7 +261,7 @@
             </div>
 
 
-            <div class="contact-container page" id="contact-page">  <!-- contact page -->
+            <div class="contact-container page" id="contact-page">    <!-- contact page -->
                 <main class="contact-content">
                     <section class="contact">
                         <h1 class="title color-change">Contact Me</h1>
@@ -293,13 +293,15 @@
                         <p class="responsive">I'M VERY RESPONSIVE TO MESSAGES</p>
             
                         <!-- Contact Form -->
-                        <form action="https://formspree.io/f/xjkyezkl" method="post">
-                            <input type="text" placeholder="Name">
-                            <input type="email" placeholder="Email">
-                            <input type="text" placeholder="Subject">
-                            <textarea placeholder="Message" rows="10"></textarea>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </form>
+                        <form id="contactForm">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required />
+                            <input type="email" id="email" name="email" placeholder="Your Email" required />
+                            <input type="tel" id="number" name="number" placeholder="Your Phone Number" required />
+                            <input type="text" id="subject" name="subject" placeholder="Your subject" required />
+                            <textarea id="message" name="message" placeholder="Your Message" rows="10"></textarea>
+                            <button type="submit" class="btn submit-btn">Send</button>
+                          </form>
+    
                     </section>
                 </main>
             </div>

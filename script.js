@@ -239,6 +239,36 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 1500);
     }
     changeIconColors();
+
+    // ========= form submition====== //
+
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+        e.preventDefault(); 
+    
+        const form = e.target;
+        const formData = new FormData(form);
+
+        const phone = document.getElementById("number").value;
+
+        // Validate phone number (must be exactly 10 digits)
+          if (!/^\d{10}$/.test(phone)) {
+          alert("Please enter a valid 10-digit phone number.");
+          return;
+        }
+    
+        const response = await fetch("https://formspree.io/f/xjkyezkl", {
+          method: "POST",
+          body: formData, // Send form data directly
+          headers: { "Accept": "application/json" } 
+        });
+    
+        if (response.ok) {
+          alert("Message sent successfully!");
+          form.reset();
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+    });
 });
 
 

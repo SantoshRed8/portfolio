@@ -235,22 +235,6 @@ a{
   }
 }
 
-/* right side content */
-/* .home-container{
-  display: none;
-}
-.about-container{
-  display: none;
-}
-.services-container{
-  display: none;
-}
-.projects-container{
-  display: none;
-}
-.contact-container{
-  display: none;
-} */
 
 .page {
   display: none;
@@ -259,7 +243,8 @@ a{
   display: block;
 }
 
-/* home page  */
+/* ========== HOME page START ========== */
+
 .content {
   margin: 20px 20px; 
   display: flex;
@@ -316,8 +301,6 @@ a{
   width: 80%; /* 70% width for headings on desktop */
   position: relative; /* Allow positioning of child elements */
 }
-
-
 
 @media (max-width: 768px) {
   .home-content {
@@ -442,10 +425,9 @@ a{
     margin-left: 150px;
   }
 }
-/* home page  */
+/* ========== HOME page END ========== */
 
-
-/* about page  */
+/* ========== ABOUT page START ========== */
 
 .about-container {
   margin-left: 220px;
@@ -655,11 +637,9 @@ margin: 5px 0;
   }
 }
 
-/* ========== about page  ========== */
+/* ========== ABOUT page END ========== */
 
-
-
-/* ========== Services page ========== */
+/* ========== SERVICES page START========== */
 
 /* Main Content */
 .services-container {
@@ -722,9 +702,9 @@ margin: 5px 0;
   }
 }
 
-/* ========== Services page ========== */
+/* ========== Services page END ========== */
 
-/* ========== projects page ========== */
+/* ========== projects page START ========== */
 
 .pro-content {
   margin-left: 220px; /* To avoid overlapping with the sidebar */
@@ -842,10 +822,10 @@ margin: 5px 0;
 }
 
 
-/* ========== projects page ========== */
+/* ========== projects page END ========== */
 
 
-/* ========== conatct page ========== */
+/* ========== conatct page START ========== */
 
 .contact-container {
   flex: 1;
@@ -901,6 +881,7 @@ input, textarea {
   width: 100%;
   padding: 10px;
   border-radius: 5px;
+  color: white;
   border: none;
   outline: none;
   background-color: #333;
@@ -910,8 +891,8 @@ input, textarea {
   background-color: goldenrod;
   color: white;
   border: none;
-  width: 200px;
-  height: 30px;
+   width: 200px;
+  /* height: 30px; */ 
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -919,7 +900,9 @@ input, textarea {
   cursor: pointer;
   font-size: 16px;
 }
-
+.submit-btn:hover{
+  background-color: rgb(252, 153, 5) !important;
+}
 /* Light Mode */
 .light-mode {
   background-color: #edeade;
@@ -939,6 +922,4 @@ input, textarea {
 }
 
 
-
-
-/* ========== contact page ========== */
+/* ========== contact page END ========== */
