@@ -375,6 +375,17 @@ a{
   flex-direction: row;
 }
 
+.text-content .theme-text{
+  font-family: 'Poppins';
+  font-size: xx-large;
+}  
+
+
+.heading-images .theme-text{
+  font-family: 'clicker script';
+  font-size: xx-large;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .content{
